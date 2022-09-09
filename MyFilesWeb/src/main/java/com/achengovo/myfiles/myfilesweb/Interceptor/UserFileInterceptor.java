@@ -1,4 +1,4 @@
-package com.achengovo.myfiles.Interceptor;
+package com.achengovo.myfiles.myfilesweb.Interceptor;
 
 import com.achengovo.myfiles.entity.User;
 import com.achengovo.myfiles.utils.CookiesUtils;

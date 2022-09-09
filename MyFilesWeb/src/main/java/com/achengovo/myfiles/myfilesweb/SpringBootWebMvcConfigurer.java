@@ -1,7 +1,7 @@
-package com.achengovo.myfiles;
+package com.achengovo.myfiles.myfilesweb;
 
-import com.achengovo.myfiles.Interceptor.LoginInterceptor;
-import com.achengovo.myfiles.Interceptor.UserFileInterceptor;
+import com.achengovo.myfiles.myfilesweb.Interceptor.LoginInterceptor;
+import com.achengovo.myfiles.myfilesweb.Interceptor.UserFileInterceptor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;

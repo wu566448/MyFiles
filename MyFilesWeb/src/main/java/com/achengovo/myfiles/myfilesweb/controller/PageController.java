@@ -1,4 +1,4 @@
-package com.achengovo.myfiles.controller;
+package com.achengovo.myfiles.myfilesweb.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;

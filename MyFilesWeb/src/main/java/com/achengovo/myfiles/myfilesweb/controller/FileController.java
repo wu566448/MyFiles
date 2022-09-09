@@ -1,16 +1,15 @@
-package com.achengovo.myfiles.controller;
+package com.achengovo.myfiles.myfilesweb.controller;
 
 import com.achengovo.lightning.client.Reference;
 import com.achengovo.lightning.client.filter.Filter;
 import com.achengovo.lightning.client.loadbalance.WeigthRandomLoadbalanceImpl;
 import com.achengovo.myfiles.entity.User;
 import com.achengovo.myfiles.entity.UserFile;
-import com.achengovo.myfiles.filter.LogFilter;
+import com.achengovo.myfiles.myfilesweb.filter.LogFilter;
 import com.achengovo.myfiles.service.FileService;
 import com.achengovo.myfiles.utils.CookiesUtils;
 import com.achengovo.myfiles.utils.JudgeFileType;
 import com.alibaba.nacos.api.exception.NacosException;
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
@@ -24,7 +23,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
-@Slf4j
 @Controller
 public class FileController {
     private FileService fileService;

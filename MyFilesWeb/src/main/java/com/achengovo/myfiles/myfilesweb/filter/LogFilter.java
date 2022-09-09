@@ -1,13 +1,13 @@
-package com.achengovo.myfiles.filter;
+package com.achengovo.myfiles.myfilesweb.filter;
 
 import com.achengovo.lightning.client.Client;
 import com.achengovo.lightning.client.filter.Filter;
 import com.achengovo.lightning.commons.message.RpcRequest;
-import lombok.extern.slf4j.Slf4j;
+import org.slf4j.Logger;
 
 import java.util.concurrent.ExecutionException;
-@Slf4j
 public class LogFilter implements Filter {
+    Logger log=org.slf4j.LoggerFactory.getLogger(LogFilter.class);
     /**
      * Lightning调用日志
      * @param client 客户端
