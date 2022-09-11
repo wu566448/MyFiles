@@ -5,6 +5,10 @@ Gitee：https://gitee.com/achengovo/myfiles.git
 
 Github：https://github.com/achengovo/MyFiles.git
 
+线上预览地址：http://myfiles.achengovo.com
+
+预览用户名：test 密码：test
+
 技术栈：MySQL、Redis、Springboot、mybatis、netty、nacos
 
 功能实现：登录、注册、自动登录、邮件验证码、文件上传、文件下载、文件预览、移动、删除、重命名、新建文件夹、编辑个人资料、修改密码等功能。
