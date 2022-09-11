@@ -3,7 +3,6 @@ package com.achengovo.myfiles.mapper;
 import com.achengovo.myfiles.entity.User;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
-@Mapper
 public interface UserMapper {
     /**
      * 用户登录

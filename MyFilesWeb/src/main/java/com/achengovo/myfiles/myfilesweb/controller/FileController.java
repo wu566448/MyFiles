@@ -108,6 +108,10 @@ public class FileController {
         userFile.setUserFileId(userFileId);
         userFile=fileService.getFileByUserFileId(userFile,user);
         String path = "D:\\MyFiles\\userFile\\"+userFile.getUserId()+"\\"+userFile.getFileLocation();
+        //判断系统类型
+        if(System.getProperty("os.name").toLowerCase().contains("linux")){
+            path="/MyFiles/userFile/"+userFile.getUserId()+"/"+userFile.getFileLocation();
+        }
         String fileName = URLEncoder.encode(userFile.getUserFileName().trim(), "UTF-8");
         response.setHeader("Content-Disposition", "attachment;filename=" + fileName);
         System.out.println(path);

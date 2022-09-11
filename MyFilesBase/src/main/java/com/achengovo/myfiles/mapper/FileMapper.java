@@ -4,7 +4,6 @@ import com.achengovo.myfiles.entity.UserFile;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
-@Mapper
 public interface FileMapper {
     /**
      * 通过dir查询文件夹列表

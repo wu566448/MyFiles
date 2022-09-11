@@ -25,7 +25,7 @@ public class SendMail {
         Authenticator auth = new Authenticator() {
             public PasswordAuthentication getPasswordAuthentication() {
                 //设置发送人的帐号和密码
-                return new PasswordAuthentication("achengovo@qq.com", "mailpass");
+                return new PasswordAuthentication("achengovo@qq.com", "zbuspskxpdygecih");
             }
         };
         // 创建邮件对象

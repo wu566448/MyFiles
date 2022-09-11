@@ -7,11 +7,14 @@ import com.achengovo.myfiles.service.FileService;
 import com.achengovo.myfiles.utils.MybatisUtils;
 import com.achengovo.myfiles.utils.RedisUtils;
 import org.slf4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;
 public class FileServiceImpl implements FileService {
     Logger log = org.slf4j.LoggerFactory.getLogger(FileServiceImpl.class);
-    MybatisUtils mybatisUtils=new MybatisUtils();
+    @Autowired
+    MybatisUtils mybatisUtils;
+//    MybatisUtils mybatisUtils=new MybatisUtils();
     FileMapper fileMapper = mybatisUtils.getMapper(FileMapper.class);
     /**
      * 通过dir查询文件夹列表

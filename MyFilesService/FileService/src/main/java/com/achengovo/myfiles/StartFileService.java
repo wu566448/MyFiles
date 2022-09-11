@@ -31,7 +31,7 @@ public class StartFileService {
         Instance instance = new Instance();
         instance.setWeight((Double.parseDouble(properties.getProperty("service.weight","0.1"))));
         instance.setIp(properties.getProperty("service.ip","127.0.0.1"));
-        instance.setPort(Integer.parseInt(properties.getProperty("service.port","7000")));
+        instance.setPort(Integer.parseInt(properties.getProperty("service.port","7001")));
         instance.setServiceName(FileService.class.getName());
         StartServer startServer =
                 new StartServer(serviceInstances,

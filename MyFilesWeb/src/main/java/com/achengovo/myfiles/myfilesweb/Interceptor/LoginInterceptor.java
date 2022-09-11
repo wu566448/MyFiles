@@ -22,14 +22,16 @@ public class LoginInterceptor implements HandlerInterceptor {
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
         String userToken= CookiesUtils.getCookie(request,"userToken");
         if(userToken==null){
+            response.sendRedirect("/page/login");
             return false;
         }
         User user= (User) RedisUtils.getObject(userToken);
+        System.out.println(user);
         if(user!=null){
             return true;
         }
         //重定向
-        response.sendRedirect(request.getContextPath()+"/page/login");
+        response.sendRedirect("/page/login");
         return false;
     }
 }

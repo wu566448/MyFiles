@@ -142,6 +142,7 @@ public class ClientImpl implements Client {
         CompletableFuture<Object> future = new CompletableFuture<>();
         session.addSession(request.getRequestId(), future);
         channel.writeAndFlush(request);
+        log.info("发起请求:{}",request);
         return future.get();
     }
 }

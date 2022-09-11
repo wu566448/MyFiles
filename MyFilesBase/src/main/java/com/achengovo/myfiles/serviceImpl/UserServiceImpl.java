@@ -4,13 +4,16 @@ import com.achengovo.myfiles.mapper.UserMapper;
 import com.achengovo.myfiles.service.UserService;
 import com.achengovo.myfiles.utils.*;
 import org.slf4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import javax.mail.MessagingException;
 
 import static com.achengovo.myfiles.utils.VerCode.getRandomVerCode;
 public class UserServiceImpl implements UserService {
     Logger log = org.slf4j.LoggerFactory.getLogger(UserServiceImpl.class);
-    MybatisUtils mybatisUtils=new MybatisUtils();
+    @Autowired
+    MybatisUtils mybatisUtils;
+//    MybatisUtils mybatisUtils=new MybatisUtils();
     UserMapper userMapper = mybatisUtils.getMapper(UserMapper.class);
     /**
      * 用户登录

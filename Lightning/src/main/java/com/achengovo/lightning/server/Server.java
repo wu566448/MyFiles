@@ -58,6 +58,7 @@ public class Server {
                                         @Override
                                         public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
                                             RpcRequest request = (RpcRequest) msg;
+                                            log.info("收到请求：{}" + request);
                                             Long requestId = request.getRequestId();
                                             String interfaceName = request.getInterfaceName();
                                             String methodName = request.getMethodName();
